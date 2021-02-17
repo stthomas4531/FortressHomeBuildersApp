@@ -48,13 +48,17 @@ nav{
 }
 
 .nav-links a{
-    color: rgb(226, 226, 226);
+    color: #fff;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
-    
+    padding: 5px;
+}
+
+.nav-links a:hover {
+    color: dimgray;
 }
 
 .burger{
@@ -100,14 +104,39 @@ nav{
 }
 
 .section-1 {
-    height: 100vh;
-    background-image: url(image/pexels-pixabay-326333.jpg);
+    height: 85vh;
+    background-image: url(image/Final-127.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
+.section-1-text {
+    float: left;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 30px;
+}
+
+.section-1-text button {
+    float: right;
+    background: none;
+    border: 2px solid #fff;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: Playfair Display;;
+}
+
+.section-1-text button:hover {
+    background: #fff;
+    color: black;
+
+}
+
 .section-3 {
-    height: 100vh;
+    height: 85vh;
     background-image: url(image/Final-6.jpg);
     background-attachment: fixed;
     background-size: cover;  
