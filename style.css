@@ -8,26 +8,6 @@ element.style {
     white-space: pre-wrap;
 }
 
-h1{
-    font-family: Playfair Display;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 70px;
-    letter-spacing: .01em;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    text-align: center;
-}
-
 body {
     font-family: futura-pt;
     font-weight: 400;
@@ -42,28 +22,43 @@ body {
 .box{
     width: 100%;
     height: 600px;
-    color: white;
+    padding: 40px 60px;
+    color: #000;
+    
+}
+
+.box p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+
+.box h1 {
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .section-1 {
     height: 100vh;
-    background-image: url(image\pexels-pixabay-326333.jpg);
+    background-image: url(image/pexels-pixabay-326333.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
-.section-2 {
-    background: white;
-}
-
 .section-3 {
     height: 100vh;
-    background-image: url();
+    background-image: url(image/Final-6.jpg);
     background-attachment: fixed;
     background-size: cover;  
-}
-.section-4 {
-    background: white;  
 }
 
 nav{
@@ -147,6 +142,9 @@ nav{
     }
     .burger{
         display: block;
+    }
+    .box h1{
+        font-size: 35px;
     }
 }
 
