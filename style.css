@@ -188,6 +188,8 @@ nav{
 }
 
 .about-img img {
+    max-width: 100%;
+    height: auto;
     box-shadow: 10px 10px 5px gray;
 }
 
@@ -283,9 +285,7 @@ nav{
         grid-template-columns: 1fr;
         width: 100%;
     }
-    /* .about-img {
-        height: 100vh;
-    } */
+  
     .content h2 {
         font-size: 20px;
         margin-top: 50px;
@@ -293,6 +293,22 @@ nav{
 
     .content span {
         margin: 20px 0;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .links li a {
+        font-size: 14px;
+    }
+
+    links {
+        margin: 5px 0;
+    }
+
+    .social li i {
+        font-size: 15px;
     }
 }
 
@@ -410,34 +426,6 @@ nav{
         font-size: 35px;
     }
 }
-
-/* ABOUT US SECTION */
-@media screen and (max-width: 1200px) {
-    .main-container {
-        padding: 80px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .about-section {
-        background-size: 100%;
-        padding: 100px 40;
-    }
-    .main-container {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .about-section {       
-        padding: 0;
-    }
-    .main-container {
-       padding: 60px;
-    }
-}
-/* END ABOUT US SECTION */
-
 
 .nav-active{
     transform: translateX(0%);
