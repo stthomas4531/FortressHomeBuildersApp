@@ -25,7 +25,7 @@
                 </div>
                 <div class="nav-links">
                     <a href="#" class="Header-nav-item" data-test="template-nav">Home</a>
-                    <a href="#" class="Header-nav-item" data-test="template-nav">Portfolio</a>
+                    <a href="#portfolio" class="Header-nav-item" data-test="template-nav">Portfolio</a>
                     <a href="#about" class="Header-nav-item" data-test="template-nav">About</a>
                     <a href="#" class="Header-nav-item" data-test="template-nav">Team</a>
                     <a href="#" class="Header-nav-item" data-test="template-nav">Contact</a>
@@ -47,7 +47,6 @@
             <br />
             <a href="#portfolio" class="btn">View Portfolio</a>
         </div>
-        
     </div>
 
     <div class="section-2 box">
@@ -92,7 +91,7 @@
         </div>
         
         <div class="content">
-            <h2>About Us</h2>
+            <h2 class="about-section__title">About Us</h2>
             <span><!-- line here --></span>
             <p class="about-paragraph"><strong>Christopher Fisher</strong>, born and raised in Coram, MT has a beautifully creative mind. His craft and workmanship comes through from concept to completion, his attention to detail and artistic eye bring every masterpiece to life.
             </p>
@@ -136,12 +135,66 @@
 
     <!-- END ABOUT SECTION -->
 
+
+    <!-- PORTFOLIO SECTION -->
+    <div class="section-5 box" id="portfolio">
+        <div class="section-5-text">
+            <h1 style="white-space:pre-wrap">Portfolio </h1>
+            <!-- <br />
+            <a href="#portfolio" class="btn">View Portfolio</a> -->
+        </div>
+    </div>
+    <section class="portfolio-section" >      
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="image/Final-1.jpg"  alt="abstract1"/>
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="image/Final-2.jpg" alt="abstract2"/>
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="image/Final-3.jpg" alt="abstract3"/>
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="image/Final-4.jpg" alt="abstract4"/>
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="image/Final-5.jpg" alt="abstract5"/>
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="image/Final-6.jpg" alt="abstract6"/>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+                <i class="fas fa-angle-right"></i>
+            </button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- END PORTFOLIO SECTION -->
+
+
     <!-- FOOTER -->
 
     <footer class="footer">
         <div class="footer-left">
             <p class="footer-links">
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#">Contact</a>
                 <a href="#about">About</a>
             </p>
