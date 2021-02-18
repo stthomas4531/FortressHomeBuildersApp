@@ -6,9 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">              
         <title>Fortress Home Builder | Coram, Montana | Custom Home Builder</title>
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
         <!-- Font Awesome CDN -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
@@ -17,6 +14,9 @@
     </head>
 
     <body>
+
+    <!-- HEADER / NAV -->
+
     <header>
         <div data-nc-container="top-center">
             <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
@@ -26,7 +26,7 @@
                 <div class="nav-links">
                     <a href="#" class="Header-nav-item" data-test="template-nav">Home</a>
                     <a href="#" class="Header-nav-item" data-test="template-nav">Portfolio</a>
-                    <a href="#" class="Header-nav-item" data-test="template-nav">About</a>
+                    <a href="#about" class="Header-nav-item" data-test="template-nav">About</a>
                     <a href="#" class="Header-nav-item" data-test="template-nav">Team</a>
                     <a href="#" class="Header-nav-item" data-test="template-nav">Contact</a>
                 </div>
@@ -38,11 +38,14 @@
             </nav>
         </div>
     </header>
+
+    <!-- END HEADER / NAV -->
+
     <div class="section-1 box">
         <div class="section-1-text">
             <h1 style="white-space:pre-wrap">Western Luxury <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Redefined</h1>
             <br />
-            <button>View Portfolio</button>
+            <a href="#portfolio" class="btn">View Portfolio</a>
         </div>
         
     </div>
@@ -55,13 +58,10 @@
             Fortress Home Builders is locally owned and operated by Christopher Fisher and his team of craftsmen. Specializing in custom home builds as well as commercial applications. 
             Featuring custom beam work and rustic interior finishes.
             <br />
-            <br />
             Building your dream home or business venture-Whether it's your forever home, 
             vacation home, or business investment- 
             <br />
-            <br />
             We want to dream and build together with you.
-            <br />
             <br />
             We offer a full range of services From the beginning stages of clearing property, building roads, putting in utilities, & dirt work down to the finishing touches.
         </p>
@@ -83,12 +83,67 @@
         </p>
     </div>
 
+    <!-- ABOUT SECTION -->
+
+    <section class="about-section" id="about">
+        <div class="about-img">
+            <img src="/image/AboutFamilyPhoto.webp" alt="about image">
+            <!-- <img src="/image/AboutFamilyPhoto.webp" alt="about image"> -->
+        </div>
+        
+        <div class="content">
+            <h2>About Us</h2>
+            <span><!-- line here --></span>
+            <p class="about-paragraph"><strong>Christopher Fisher</strong>, born and raised in Coram, MT has a beautifully creative mind. His craft and workmanship comes through from concept to completion, his attention to detail and artistic eye bring every masterpiece to life.
+            </p>
+            
+            <p class="about-paragraph">
+            Christopher is a wonderful father and husband, to Keshia and his five beautiful children, Noeley(8), Harper(7), Kingston(5), Deacon(3), & Clarke(18 months). Both being born and raised in the Flathead Valley, building family and business here is important to them.
+            </p>
+            
+            <p class="about-paragraph">
+            Owning and operating Fisher Properties - Vacation Rental properties in Coram. As well as Glacier Highline one of Glacier Park's newest premier outdoor activities. A high ropes aerial adventure park also located in Coram. A board member in his local church, Flood in Columbia Falls. He's after God's heart and purpose for his life, seeking to better our community one project at a time.
+            </p>
+            <ul class="links">
+                <li><a href="#">Work</a></li>
+
+                <div class="vertical-line"></div>
+
+                <li><a href="#">Service</a></li>
+
+                <div class="vertical-line"></div>
+
+                <li><a href="#">Contact</a></li>
+
+
+            </ul>
+            <ul class="social">
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+               
+                
+                
+            </ul>
+        </div>
+    </section>
+
+    <!-- END ABOUT SECTION -->
+
+    <!-- FOOTER -->
+
     <footer class="footer">
         <div class="footer-left">
             <p class="footer-links">
                 <a href="#">Portfolio</a>
                 <a href="#">Contact</a>
-                <a href="#">About</a>
+                <a href="#about">About</a>
             </p>
             
         </div>
@@ -115,12 +170,9 @@
             
             <p class="copyright">&copy; 2021 FortressHomeBuilders</p>
         </div>
-   
-          
-        
-
-        
     </footer>
+
+    <!-- END FOOTER -->
 
         <script src="app.js"></script>
     </body>
