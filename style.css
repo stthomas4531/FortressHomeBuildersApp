@@ -179,8 +179,9 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 90vh;
-    width: 85vw;
+    width: 100vw;
     margin: 0 auto;
+    background-color: var(--clr-dark);
 }
 
 .about-img {
@@ -190,7 +191,7 @@ nav{
 .about-img img {
     max-width: 100%;
     height: auto;
-    box-shadow: 10px 10px 5px gray;
+    /* box-shadow: 10px 10px 5px var(--clr-accent); */
 }
 
 
@@ -199,6 +200,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    color: var(--clr-light);
 }
 
 .about-section__title {
@@ -207,12 +209,13 @@ nav{
     font-family: var(--ff-primary);
     letter-spacing: 3px;
     opacity: 0.9;
+    color: var(--clr-light);
 }
 
 .content span {
     height: 0.5px;
     width: 80px;
-    background: var(--clr-accent);
+    background: var(--clr-light);
     margin: 30px 0;
 }
 
@@ -223,6 +226,7 @@ nav{
     text-align: justify;
     margin: 0 auto;
     line-height: 1.7;
+    color: var(--clr-light);
 }
 
 .about-paragraph {
@@ -230,7 +234,7 @@ nav{
 }
 
 .links li{
-    border: 0.5px solid var(--clr-accent);
+    border: 0.5px solid var(--clr-light);
     border-radius: 5px;
     padding: 10px 15px;
     width: 160px;
@@ -239,7 +243,7 @@ nav{
 
 .links a {
     text-transform: uppercase;
-    color: var(--clr-accent);
+    color: var(--clr-light);
 }
 
 .links li:hover {
@@ -253,7 +257,7 @@ nav{
 .vertical-line {
     height: 30px;
     width: 0.5px;
-    background: var(--clr-accent);
+    background: var(--clr-light);
     margin: 0 auto;
 }
 
@@ -270,7 +274,7 @@ nav{
 
 .social li i {
     font-size: 26px;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     opacity: 0.8;
 }
 
