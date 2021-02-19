@@ -133,12 +133,14 @@ nav{
     font-family: var(--ff-primary);
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: .01em;
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: center;
 }
+
+/* HOME PAGE */
 
 .section-1 {
     height: 100vh;
@@ -183,6 +185,9 @@ nav{
     background-size: cover;  
 }
 
+/* END HOME PAGE */
+
+
 /* ABOUT SECTION */
 .section-5 {
     height: 100vh;
@@ -204,7 +209,7 @@ nav{
 
 .about-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .5fr 1fr;
     min-height: 90vh;
     width: 100vw;
     margin: 0 auto;
@@ -273,11 +278,11 @@ nav{
 }
 
 .links li:hover {
-    border-color: royalblue;
+    border-color: var(--clr-accent);
 } 
 
 .links li:hover a {
-    color: royalblue;
+    color: var(--clr-accent);
 }
 
 .vertical-line {
@@ -305,7 +310,7 @@ nav{
 }
 
 .social li i:hover {
-    color: royalblue;
+    color: var(--clr-accent);
 }
 
 /**********************/
