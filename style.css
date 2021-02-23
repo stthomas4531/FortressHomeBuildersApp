@@ -143,14 +143,14 @@ nav{
 
 /* HOME PAGE */
 
-.section-1 {
+.section-home-1 {
     height: 100vh;
     background-image: url(assets/images/Final-53.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
-.section-1-text {
+.section-home-1 .text {
     float: left;
     color: var(--clr-light);
     text-shadow: 2px 2px var(--clr-dark);
@@ -179,7 +179,7 @@ nav{
 
 }
 
-.section-3 {
+.section-home-3 {
     height: 85vh;
     background-image: url(assets/images/Final-30.jpg);
     background-attachment: fixed;
@@ -190,13 +190,13 @@ nav{
 
 
 /* ABOUT SECTION */
-.section-5 {
+.section-about {
     height: 100vh;
     background-image: url(assets/images/Final-86.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
-.section-5-text {
+.section-about .text {
     float: left;
     color: var(--clr-light);
     text-shadow: 2px 2px var(--clr-dark);
@@ -204,7 +204,7 @@ nav{
     padding-top: 10rem;
 }
 
-.section-5-text h1 {
+.section-about .text h1 {
     font-size: 60px;
 }
 
@@ -242,6 +242,7 @@ nav{
     letter-spacing: 3px;
     opacity: 0.9;
     color: var(--clr-light);
+    letter-spacing: 2px;
 }
 
 .content span {
@@ -352,21 +353,22 @@ nav{
 
 
 /* PORTFOLIO SECTION */
-.section-6 {
+.section-portfolio {
     height: 100vh;
     background-image: url(assets/images/Final-100.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
-.section-6-text {
+.section-portfolio .text {
     float: left;
     color: var(--clr-light);
     text-shadow: 2px 2px var(--clr-dark);
     margin-top: 90px;
     padding-top: 10rem;
+    letter-spacing: 2px;
 }
 
-.section-6-text h1 {
+.section-portfolio .text h1 {
     font-size: 60px;
 }
 
@@ -430,7 +432,6 @@ nav{
     position: relative;
     height: 100%;
     transition: transform 250ms ease-in;
-
 }
 
 .carousel__slide {
@@ -492,13 +493,13 @@ nav{
 
 /* CONTACT SECTION */
 
-.section-7 {
+.section-contact {
     height: 100vh;
-    background-image: url(assets/images/Final-86.jpg);
+    background-image: url(assets/images/Final-78.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
-.section-7-text {
+.section-contact .text {
     float: left;
     color: var(--clr-light);
     text-shadow: 2px 2px var(--clr-dark);
@@ -506,32 +507,43 @@ nav{
     padding-top: 10rem;
 }
 
-.section-7-text h1 {
+.section-contact .text h1 {
     font-size: 60px;
 }
 
 #contact-section{
     padding: 0px;
-    margin: 0px;
+    margin: 0 auto;
     font-family: sans-serif;
     background-image: url(assets/images/contactbackground.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
-    padding-bottom: 2%;
+    padding-bottom: 10%;
 }
 
-#contact-section .container h2{
+.contact-content {
+    padding-top: 7rem;
+}
+
+.contact-content p {
+    font-family: var(--ff-secondary);
+}
+
+.content-section__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: var(--ff-primary);
+    letter-spacing: 3px;
+    opacity: 0.9;
+    color: var(--clr-light);
     text-align: center;
-    text-decoration: underline;
-    text-underline-position: under;
-    color: rgb(238,235,235);
     letter-spacing: 2px;
 }
 
 .contact-form i.fa{
-    font-size: 22px;
+    font-size: 16px;
     padding: 3%;
     background-color: none;
     margin: 2%;
@@ -542,73 +554,103 @@ nav{
 }
 
 .contact-form i.fa:hover{
-    cursor: pointer;
     border: 2px solid #fff;
-    color: #fff;
+    color: var(--clr-light);
+}
+
+.contact-email-link {
+    color: var(--clr-light);
+}
+
+.contact-email-link:hover {
+    color: var(--clr-accent);
 }
 
 .contact-form{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 3fr 8fr;
     grid-gap: 5px;
+}
+
+.contact-form form {
+    text-align: center;
 }
 
 .form-info{
     font-size: 16px;
     font-style: italic;
-    color: #fff; 
+    color: var(--clr-light);
     letter-spacing: 2px;
+    font-family: var(--ff-secondary);
 }
+
+/* .field {
+    width: 70%;
+    border: 2px solid var(--clr-dark);
+    border-radius: 5px;
+	outline: none;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+} */
 
 input{
     padding: 10px;
     margin: 10px;
     width: 70%;
-    background-color: rgb(136,133,133,0.5);
-    color: #fff;
+    font-size: 1.1rem;
+    /* background-color: rgb(136,133,133,0.5); */
+    background-color: var(--clr-light);
+    color: var(--clr-accent);
     border: none;
+    border-radius: 5px;
     outline: none;
 }
 
 input::placeholder{
-    color: #fff;
+    color: var(--clr-accent);
+    font-family: var(--ff-secondary);
 }
 
 textarea{
     padding: 10px;
     margin: 10px;
     width: 70%;
-    background-color: rgb(136,133,133,0.5);
-    color: #fff;
+    /* background-color: rgb(136,133,133,0.5); */
+    background-color: var(--clr-light);
+    color: var(--clr-accent);
     border: none;
+    border-radius: 5px;
     outline: none;
 }
 
 textarea::placeholder{
-    color: #fff;
+    color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    letter-spacing: 1px;
 }
 
-.submit{
-    width: 40%;
+.contact-btn {
     background: none;
-    padding: 4px;
-    outline: none;
-    font-size: 13px;
+    border: 2px solid var(--clr-light);
+    padding: 10px;
+    font-size: 16px;
     font-weight: bold;
-    letter-spacing: 2px;
-    height: 33px;
-    text-align: center;
-    cursor: pointer;
-    letter-spacing: 2px;
-    margin-left: 3%;
-    border: 2px solid rgb(190,190,190);
-    color:rgb(190,190,190);
+    text-decoration: none;
+    color: var(--clr-light);
+    border-radius: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: var(--ff-primary);
+    text-shadow: none;
 }
 
-.submit:hover{
-    border: 1px solid #fff;
-    color: #fff;
-    cursor: pointer;
+.contact-btn:hover {
+    background: var(--clr-light);
+    color: var(--clr-accent);
 }
 
 #contact-section .container p{

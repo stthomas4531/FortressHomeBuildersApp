@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">              
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fortress Home Builder | Contact</title>
 
         <!-- Font Awesome CDN -->
@@ -40,34 +40,41 @@
     <!-- END HEADER / NAV -->
 
      <!-- CONTACT SECTION -->
-     <div class="section-7 box" id="contact">
-        <div class="section-7-text">
+     <div class="section-contact box" id="contact">
+        <div class="text">
             <h1 style="white-space:pre-wrap">contact</h1>
         </div>
     </div>
 
     <section id="contact-section">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>You dream it. We build it.</p>
+            <div class="content contact-content">
+                <h2 class="content-section__title">Contact Us</h2>
+                <span><!-- line here --></span>
+                <p>You dream it. We build it.</p>
+            </div>
+
             <div class="contact-form">
-            
+
                 <!-- first grid section-->
-                <div>
+                <div class="contact-icons">
                     <i class="fa fa-map-marker"></i><span class="form-info">413 Tangent Lane Coram MT 59913</span><br>
-                    <i class="fa fa-phone"></i><span class="form-info">Phone # 406-270-0275</span><br>
-                    <i class="fa fa-envelope"></i><span class="form-info">fortresshomebuilders@gmail.com</span><br>
+                    <i class="fa fa-phone"></i><span class="form-info">406-270-0275</span><br>
+                    <i class="fa fa-envelope"></i><span class="form-info"><a class="contact-email-link" href="mailto: fortresshomebuilders@gmail.com">fortresshomebuilders@gmail.com</a></span><br>
                 </div>
 
                 <!-- second grid section-->
                 <div>
-                    <form>
+                    <form name="contact" method="POST" data-netlify="true">
                         <input type="text" placeholder="First Name" required>
                         <input type="text" placeholder="Last Name" required>
                         <input type="Email" placeholder="Email" required>
                         <input type="text" placeholder="Subject of this message" required>
                         <textarea name="message" placeholder="Message" rows="5" required></textarea>
-                        <button class="submit">Send Message</button>
+                        <div>
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                        <input type="submit" value="Send Message" name="submit" class="contact-btn"></input>
                     </form>
 
                 </div>
@@ -87,7 +94,7 @@
                 <a href="contact.html">Contact</a>
                 <a href="about.html">About</a>
             </p>
-            
+
         </div>
         <div class="footer-center">
             <div class="footer-icons">
@@ -106,10 +113,10 @@
         </div>
         <div class="footer-right">
             <div class="logo">
-                <a href="index.html"><img src="../assets/images/FortressHBlogo_color_texture_web.jpg" alt="logo" class="image-logo"></a>
+                <a href="../index.html"><img src="../assets/images/FortressHBlogo_color_texture_web.jpg" alt="logo" class="image-logo"></a>
             </div>
             <br />
-            
+
             <p class="copyright">&copy; 2021 FortressHomeBuilders</p>
         </div>
     </footer>
