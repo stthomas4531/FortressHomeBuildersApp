@@ -373,21 +373,11 @@ nav{
 }
 
 .portfolio-section {
-    background-color: var(--clr-dark);
-    margin: 0 auto;
-
+    background: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 .portfolio-section__title {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 20px;
-}
-
-.portfolio-section__title h2 {
     text-transform: uppercase;
     font-size: 36px;
     font-family: var(--ff-primary);
@@ -397,11 +387,38 @@ nav{
     text-align: center;
 }
 
-.portfolio-section__title span {
-    height: 0.5px;
-    width: 100px;
-    background: var(--clr-light);
-    margin: 30px 0;
+/* Responsive Image Gallery */
+
+.img-area img {
+    max-width: 450px;
+    height: auto;
+}
+
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-img {
+    padding: 0 20px 20px;
+}
+
+.single-img img:hover {
+    opacity: 0.5;
+    transition: 0.9s;
+}
+
+/* End Responsive Image Gallery */
+
+/* Image Carousel */
+#carousel {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    padding-top: 5rem;
+    margin-top: 5rem;
 }
 
 .carousel {
@@ -583,19 +600,6 @@ nav{
     letter-spacing: 2px;
     font-family: var(--ff-secondary);
 }
-
-/* .field {
-    width: 70%;
-    border: 2px solid var(--clr-dark);
-    border-radius: 5px;
-	outline: none;
-    color: var(--clr-dark);
-    background-color: var(--clr-light);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
-} */
 
 input{
     padding: 10px;
