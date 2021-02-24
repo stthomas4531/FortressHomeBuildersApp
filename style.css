@@ -508,6 +508,7 @@ nav{
 
 /* END PORTFOLIO SECTION */
 
+
 /* CONTACT SECTION */
 
 .section-contact {
@@ -559,6 +560,13 @@ nav{
     letter-spacing: 2px;
 }
 
+.contact-icons {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 7rem;
+    margin-left: 5rem;
+}
+
 .contact-form i.fa{
     font-size: 16px;
     padding: 3%;
@@ -584,13 +592,12 @@ nav{
 }
 
 .contact-form{
-    display: grid;
-    grid-template-columns: 3fr 8fr;
-    grid-gap: 5px;
+    display: flex;
 }
 
 .contact-form form {
-    text-align: center;
+    padding-right: 7rem;
+    margin-right: 3rem;
 }
 
 .form-info{
@@ -604,9 +611,8 @@ nav{
 input{
     padding: 10px;
     margin: 10px;
-    width: 70%;
+    width: 65%;
     font-size: 1.1rem;
-    /* background-color: rgb(136,133,133,0.5); */
     background-color: var(--clr-light);
     color: var(--clr-accent);
     border: none;
@@ -622,8 +628,7 @@ input::placeholder{
 textarea{
     padding: 10px;
     margin: 10px;
-    width: 70%;
-    /* background-color: rgb(136,133,133,0.5); */
+    width: 65%;
     background-color: var(--clr-light);
     color: var(--clr-accent);
     border: none;
@@ -659,7 +664,7 @@ textarea::placeholder{
 
 #contact-section .container p{
     text-align: center;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 3%;
@@ -673,18 +678,75 @@ textarea::placeholder{
     overflow: hidden;
 }
 
-/* contact media queries */
-@media (max-width: 768px){
+/* Contact Media Queries */
+@media screen and (max-width: 768px){
     #contact-section .contact-form{
         display: block;
         width: 100%;
         text-align: center;
     }
 
+    .contact-content {
+        margin-bottom: 1rem;
+    }
+
     #contact-section .submit{
         width: 60%;
     }
+
+    .contact-btn {
+        font-size: 12px;
+    }
+
+    .contact-form form {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-form input {
+        font-size: .5rem;
+        width: 70%;
+    }
+
+    .contact-form textarea {
+        width: 70%;
+    }
+
+    input::placeholder{
+        font-size: .9rem;
+    }
+
+    .contact-icons {
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contact-form i.fa{
+        font-size: 11px;
+    }
+
+    .form-info{
+        font-size: 12px;
+    }
 }
+
+@media screen and (max-width: 1024px){
+    .contact-icons {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .contact-form form {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .contact-form i.fa{
+        font-size: 12px;
+    }
+}
+/* End Contact Media Queries*/
 
 /* END CONTACT SECTION */
 
