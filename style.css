@@ -115,7 +115,7 @@ nav{
 .box{
     width: 100%;
     height: 600px;
-    padding: 40px 60px;
+    padding: 130px 60px;
     color: var(--clr-light);
     background-color: var(--clr-dark);
 
@@ -148,6 +148,7 @@ nav{
     background-image: url(assets/images/Final-53.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center top;
 }
 
 .section-home-1 .text {
@@ -195,6 +196,7 @@ nav{
     background-image: url(assets/images/Final-86.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
 }
 .section-about .text {
     float: left;
@@ -358,6 +360,7 @@ nav{
     background-image: url(assets/images/Final-100.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
 }
 .section-portfolio .text {
     float: left;
@@ -592,6 +595,7 @@ nav{
     background-image: url(assets/images/Final-78.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
 }
 .section-contact .text {
     float: left;
