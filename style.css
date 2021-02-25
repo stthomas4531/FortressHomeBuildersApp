@@ -424,7 +424,7 @@ nav{
     background-color: var(--clr-accent);
   }
 
-  .text {
+  .overlay-text {
     color: white;
     font-size: 20px;
     position: absolute;
