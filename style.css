@@ -191,9 +191,21 @@ nav{
 
 .section-home-3 {
     height: 85vh;
-    background-image: url(assets/images/Final-30.jpg);
+    background-image: url(assets/images/tower.webp);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
+}
+
+.section-home-3 .text {
+    float: right;
+    margin-top: 10rem;
+    text-shadow: 2.5px 2.5px var(--clr-dark);
+
+}
+
+.section-home-3 .text p {
+    text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
@@ -280,8 +292,6 @@ nav{
 .content p {
     padding-bottom: 15px;
     font-weight: 300;
-    width: 70%;
-    text-align: justify;
     margin: 0 auto;
     line-height: 1.7;
     color: var(--clr-light);
@@ -289,6 +299,9 @@ nav{
 
 .about-paragraph {
     margin-bottom: 1px;
+    font-family: var(--ff-secondary);
+    text-align: justify;
+    width: 70%;
 }
 
 .links li{
@@ -418,7 +431,7 @@ nav{
 .img-area img {
     display: block;
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .img-area {
@@ -429,10 +442,15 @@ nav{
     justify-content: center;
 }
 
+/* img {
+    width: 300px;
+    height: 300px;
+} */
+
 .single-img {
     margin: 1rem;
     position: relative;
-    width: 30%;
+    width: 35%;
 }
 
 /* Image Overlay */
@@ -481,12 +499,12 @@ nav{
     background: var(--clr-dark);
     color: var(--clr-light);
     padding-top: 5rem;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .carousel {
     position: relative;
-    height: 500px;
+    height: 550px;
     width: 70%;
     margin: 0 auto;
 }
@@ -605,6 +623,10 @@ nav{
 
     .carousel__button--right {
         top: 135px;
+    }
+
+    .carousel__indicator {
+        display: none;
     }
 }
 
@@ -917,7 +939,7 @@ textarea::placeholder{
 /* End Footer */
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .nav-links{
         display: flex;
         justify-content: space-around;
@@ -934,6 +956,16 @@ textarea::placeholder{
 
     .footer {
         flex-direction: column;
+    }
+
+    .about-paragraph {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .about-paragraph {
+        width: 70%;
     }
 }
 
