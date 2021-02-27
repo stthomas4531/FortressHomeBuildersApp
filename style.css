@@ -44,8 +44,6 @@ body {
 
 section {
     padding: 5em 2em;
-    /* margin-bottom: 2em; */
-    /* margin-top: 5em; */
 }
 
 /* Nav */
@@ -160,12 +158,6 @@ nav{
     padding-top: 2rem;
     margin-top: 15rem;
 }
-
-/* .text {
-    background: rgba(105, 105, 105, .5);
-    padding: 2rem;
-    border-radius: 1rem;
-} */
 
 .btn {
 
@@ -770,7 +762,6 @@ textarea::placeholder{
 .spam-blocker {
     padding: 10px;
     margin: 10px;
-    width: 65%;
 }
 
 .contact-btn {
