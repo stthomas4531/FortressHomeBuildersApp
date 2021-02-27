@@ -710,6 +710,7 @@ nav{
 
 .contact-form{
     display: flex;
+    justify-content: center;
 }
 
 .contact-form form {
@@ -757,11 +758,6 @@ textarea::placeholder{
     color: var(--clr-accent);
     font-family: var(--ff-secondary);
     letter-spacing: 1px;
-}
-
-.spam-blocker {
-    padding: 10px;
-    margin: 10px;
 }
 
 .contact-btn {
