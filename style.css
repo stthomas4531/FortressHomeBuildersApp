@@ -767,6 +767,12 @@ textarea::placeholder{
     letter-spacing: 1px;
 }
 
+.spam-blocker {
+    padding: 10px;
+    margin: 10px;
+    width: 65%;
+}
+
 .contact-btn {
     background: none;
     border: 2px solid var(--clr-light);
