@@ -390,6 +390,7 @@ nav{
     background-size: cover;
     background-position: center center;
 }
+
 .section-portfolio .text {
     float: left;
     color: var(--clr-light);
