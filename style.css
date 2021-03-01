@@ -204,9 +204,9 @@ nav{
     }
 
 
-.box h1 {
-    font-size: 40px;
-}
+    .box h1 {
+        font-size: 40px;
+    }
 
 }
 
@@ -618,12 +618,6 @@ nav{
     }
 }
 
-/* @media screen and (min-width: 280px) and (max-width: 375) {
-   section-home-2 p {
-        font-size: 12px;
-    }
-} */
-
 /* END PORTFOLIO SECTION */
 
 
@@ -940,7 +934,7 @@ textarea::placeholder{
 /* MEDIA QUERIES */
 
 
-@media screen and (min-width: 280px) and (max-width: 375px) {
+@media screen and (min-width: 280px) and (max-width: 374px) {
     .box h1{
         font-size: 20px;
     }
@@ -970,6 +964,23 @@ textarea::placeholder{
 .single-img {
     width: 100%;
 }
+
+.section-home-1 {
+    margin-top: 98px;
+}
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .section-home-1 {
+        margin-top: 85px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+    .section-home-1 {
+        margin-top: 100px;
+    }
 }
 
 @media screen and (min-width: 281px) and (max-width: 767px) {
@@ -988,6 +999,10 @@ textarea::placeholder{
         justify-content: center;
         font-size: 12px;
     }
+/*
+    .section-home-1 {
+        margin-top: 110px;
+    } */
  }
 
  @media screen and (min-width: 411px) and (max-width: 823px) {
@@ -1002,9 +1017,11 @@ textarea::placeholder{
     .section-contact .text h1{
         font-size: 35px;
     }
+
+    .section-home-1 {
+        margin-top: 100px;
+    }
  }
-
-
 
  @media screen and (min-width: 768px) and (max-width: 1023px) {
      .section-home-1 .text {
