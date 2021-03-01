@@ -875,13 +875,14 @@ textarea::placeholder{
 
 /* SERVICES SECTION */
 
-/*.services-section{
+.services-section{
    background: url();
    background-size: cover;
    padding: 60px 0;
+   background-color: black;
 }
 
-.inner-width{
+/*.inner-width{
    width: 100%; 
    max-width: 1200px;
    margin: auto;
@@ -936,8 +937,8 @@ textarea::placeholder{
 }
 
 .service-box:hover .service-icon{
-    background:black;
-    color: #ddd;
+    background: lightblue;
+    color: black;
 }
 
 .service-title{
