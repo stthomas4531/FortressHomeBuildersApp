@@ -969,6 +969,17 @@ textarea::placeholder{
     margin-top: 98px;
 }
 
+.footer {
+    padding: 0;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.image-logo{
+    max-width: 200px;
+}
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
@@ -999,10 +1010,6 @@ textarea::placeholder{
         justify-content: center;
         font-size: 12px;
     }
-/*
-    .section-home-1 {
-        margin-top: 110px;
-    } */
  }
 
  @media screen and (min-width: 411px) and (max-width: 823px) {
