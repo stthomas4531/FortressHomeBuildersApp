@@ -139,6 +139,13 @@ nav{
 }
 
 /* HOME PAGE */
+
+/*
+    Original image has a size of 4972x3315.
+    Aspect ratio as a percentage = 66%.
+    3315 (height) / 4972 (width) = .66 === 66%.
+    This is what the padding top should be = to.
+*/
 .section-home-1 {
     width: 100%;
     padding-top: 66%;
@@ -148,12 +155,10 @@ nav{
 }
 
 .section-home-1 .text {
-    float: left;
+    position: absolute;
+    bottom: 0;
     color: var(--clr-light);
     text-shadow: 2.5px 2.5px var(--clr-dark);
-    /* margin-top: 25px;
-    padding-top: 2rem;
-    margin-top: 15rem; */
 }
 
 .btn {
