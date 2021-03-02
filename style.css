@@ -223,6 +223,7 @@ nav{
     color: var(--clr-light);
     text-shadow: 2.5px 2.5px var(--clr-dark);
     text-transform: uppercase;
+    font-family: var(--ff-primary);
 }
 
 .section-home-3 .text p {
@@ -772,36 +773,20 @@ nav{
     font-family: var(--ff-secondary);
 }
 
-input{
+.field {
     padding: 10px;
     margin: 10px;
     width: 65%;
     font-size: 1.1rem;
     background-color: var(--clr-light);
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     border: none;
     border-radius: 5px;
     outline: none;
 }
 
-input::placeholder{
-    color: var(--clr-accent);
-    font-family: var(--ff-secondary);
-}
-
-textarea{
-    padding: 10px;
-    margin: 10px;
-    width: 65%;
-    background-color: var(--clr-light);
-    color: var(--clr-accent);
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-textarea::placeholder{
-    color: var(--clr-accent);
+.field::placeholder {
+    color: var(--clr-dark);
     font-family: var(--ff-secondary);
     letter-spacing: 1px;
 }
@@ -811,6 +796,7 @@ textarea::placeholder{
     border: 2px solid var(--clr-light);
     padding: 10px;
     font-size: 16px;
+    width: 67%;
     font-weight: bold;
     text-decoration: none;
     color: var(--clr-light);
