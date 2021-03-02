@@ -147,6 +147,7 @@ nav{
     This is what the padding top should be = to.
 */
 .section-home-1 {
+    position: relative;
     width: 100%;
     padding-top: 66%;
     margin-top: 80px;
@@ -156,9 +157,13 @@ nav{
 
 .section-home-1 .text {
     position: absolute;
-    bottom: 0;
+    top: 30%;
+    bottom: 25%;
+    left: 5%;
     color: var(--clr-light);
     text-shadow: 2.5px 2.5px var(--clr-dark);
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
 }
 
 .btn {
@@ -184,6 +189,7 @@ nav{
 }
 
 .section-home-3 {
+    position: relative;
     width: 100%;
     padding-top: 47%;
     background: url(assets/images/tower.webp) no-repeat center;
@@ -191,51 +197,53 @@ nav{
 }
 
 .section-home-3 .text {
-    float: right;
-    margin-top: 10rem;
-    text-shadow: 2.5px 2.5px var(--clr-dark);
+    position: absolute;
+    right: 5%;
+    top: 45%;
+}
 
+.section-home-3 h1 {
+    color: var(--clr-light);
+    text-shadow: 2.5px 2.5px var(--clr-dark);
+    text-transform: uppercase;
 }
 
 .section-home-3 .text p {
     text-align: justify;
-}
-
-@media screen and (max-width: 768px) {
-    .section-home-1 .text {
-        margin-top: 25px;
-        padding-top: 2rem;
-        margin-top: 10rem;
-    }
-
-
-    .box h1 {
-        font-size: 40px;
-    }
-
+    color: var(--clr-light);
+    text-shadow: 2.5px 2.5px var(--clr-dark);
 }
 
 /* END HOME PAGE */
 
 
 /* ABOUT SECTION */
+/*
+    Original image has a size of 2000x1333.
+    Aspect ratio as a percentage = 66%.
+    1333 (height) / 2000 (width) = .66 === 66%.
+    This is what the padding top should be = to.
+*/
 .section-about {
-    height: 100vh;
-    background-image: url(assets/images/Final-86.jpg);
-    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    padding-top: 66%;
+    margin-top: 80px;
+    background: url(assets/images/Final-86.jpg) no-repeat center;
     background-size: cover;
-    background-position: center center;
 }
 .section-about .text {
-    float: left;
-    color: var(--clr-light);
-    text-shadow: 2px 2px var(--clr-dark);
-    margin-top: 15rem;
-    padding-top: 2rem;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+
 }
 
 .section-about .text h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
+    color: var(--clr-light);
+    text-shadow: 2px 2px var(--clr-dark);
+    text-transform: uppercase;
 }
 
 .about-section {
@@ -384,25 +392,41 @@ nav{
 
 
 /* PORTFOLIO SECTION */
+/*
+    Original image has a size of 2000x1356.
+    Aspect ratio as a percentage = 67%.
+    1356 (height) / 2000 (width) = .67 === 67%.
+    This is what the padding top should be = to.
+*/
 .section-portfolio {
-    height: 100vh;
-    background-image: url(assets/images/Final-100.jpg);
-    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    padding-top: 68%;
+    margin-top: 80px;
+    background: url(assets/images/Final-100.jpg) no-repeat center;
     background-size: cover;
-    background-position: center center;
+}
+
+.section-home-3 {
+    position: relative;
+    width: 100%;
+    padding-top: 47%;
+    background: url(assets/images/tower.webp) no-repeat center;
+    background-size: cover;
 }
 
 .section-portfolio .text {
-    float: left;
-    color: var(--clr-light);
-    text-shadow: 2px 2px var(--clr-dark);
-    margin-top: 15rem;
-    padding-top: 2rem;
-    letter-spacing: 2px;
+    position: absolute;
+    top: 45%;
+    left: 5%;
 }
 
 .section-portfolio .text h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
+    color: var(--clr-light);
+    text-shadow: 2px 2px var(--clr-dark);
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .portfolio-section {
@@ -425,7 +449,6 @@ nav{
 .img-area img {
     display: block;
     width: 100%;
-    /* height: auto; */
 }
 
 .img-area {
@@ -627,24 +650,32 @@ nav{
 
 
 /* CONTACT SECTION */
-
+/*
+    Original image has a size of 2000x1333.
+    Aspect ratio as a percentage = 66%.
+    1333 (height) / 2000 (width) = .66 === 66%.
+    This is what the padding top should be = to.
+*/
 .section-contact {
-    height: 100vh;
-    background-image: url(assets/images/Final-77.jpg);
-    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    padding-top: 66%;
+    margin-top: 75px;
+    background: url(assets/images/Final-77.jpg) no-repeat center;
     background-size: cover;
-    background-position: center center;
 }
+
 .section-contact .text {
-    float: left;
-    color: var(--clr-light);
-    text-shadow: 2px 2px var(--clr-dark);
-    margin-top: 15rem;
-    padding-top: 2rem;
+    position: absolute;
+    top: 35%;
+    left: 5%;
 }
 
 .section-contact .text h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
+    color: var(--clr-light);
+    text-shadow: 2px 2px var(--clr-dark);
+    text-transform: uppercase;
 }
 
 #contact-section{
@@ -874,19 +905,32 @@ textarea::placeholder{
 /* END CONTACT SECTION */
 
 /* SERVICES SECTION */
-
+/*
+    Original image has a size of 2000x1333.
+    Aspect ratio as a percentage = 66%.
+    427 (height) / 640 (width) = .66 === 66%.
+    This is what the padding top should be = to.
+*/
 .section-services {
-    height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-top: 66%;
+    margin-top: 70px;
     background: url(./assets/images/services.jpg) no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .section-services .text {
-    padding-top: 2rem;
-    margin-top: 15rem;
-    float: left;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.section-services .text h1 {
     text-shadow: 2px 2px var(--clr-dark);
+    color: var(--clr-light);
+    font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
 .services-section{
@@ -1046,8 +1090,9 @@ textarea::placeholder{
 
 /* End Footer */
 
-/* MEDIA QUERIES */
 
+
+/******************** MEDIA QUERIES *************************/
 
 @media screen and (min-width: 280px) and (max-width: 374px) {
     .box h1{
@@ -1055,14 +1100,13 @@ textarea::placeholder{
     }
 
     .btn {
-     font-size: 7px;
      padding: 7px;
      font-size: 11px;
  }
 
- .section-home-1 .text {
-     margin-top: 10rem;
- }
+ .text h1 {
+    font-size: 12px;
+}
 
  .section-portfolio .text h1 {
     font-size: 26px;
@@ -1110,10 +1154,6 @@ textarea::placeholder{
 }
 
 @media screen and (min-width: 281px) and (max-width: 767px) {
-    .section-home-1 .text {
-        padding-top: 2rem;
-        margin-top: 10rem;
-    }
 
     .box h1{
         font-size: 24px;
@@ -1143,31 +1183,18 @@ textarea::placeholder{
     .section-home-1 {
         margin-top: 90px;
     }
- }
 
- @media screen and (min-width: 768px) and (max-width: 1023px) {
-     .section-home-1 .text {
-         margin-top: 20rem;
-     }
-
-     .section-portfolio .text {
-        margin-top: 25rem;
+    .text h1 {
+        font-size: 18px;
     }
 
-    .section-about .text {
-        margin-top: 25rem;
+    .btn {
+        padding: 10px;
+        font-size: 12px;
     }
-
-    .section-contact .text {
-        margin-top: 25rem;
-    }
-
  }
 
  @media screen and (min-width: 1024px) and (max-width: 1279px) {
-     .section-home-1 .text {
-         margin-top: 25rem;
-     }
 
     .section-portfolio .text {
         margin-top: 35rem;
