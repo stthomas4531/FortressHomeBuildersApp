@@ -807,6 +807,11 @@ nav{
     text-shadow: none;
 }
 
+.spam-blocker {
+    margin-bottom: 1rem;
+    width: 65%;
+}
+
 .contact-btn:hover {
     background: var(--clr-light);
     color: var(--clr-accent);
@@ -836,9 +841,9 @@ nav{
         text-align: center;
     }
 
-    body {
+    /* body {
         font-size: 14px;
-    }
+    } */
 
     .contact-content {
         margin-bottom: 1rem;
@@ -1102,17 +1107,29 @@ nav{
 /******************** MEDIA QUERIES *************************/
 
 @media screen and (min-width: 280px) and (max-width: 374px) {
-    .box h1{
-        font-size: 20px;
-    }
+body {
+    line-height: unset;
+}
 
-    .btn {
-     padding: 7px;
-     font-size: 11px;
+.btn {
+    padding: 7px;
+    font-size: 11px;
  }
 
  .text h1 {
+    font-size: 14px;
+}
+
+.section-home-3 h1 {
     font-size: 12px;
+}
+
+.section-home-3 p {
+    font-size: 12px;
+}
+
+.section-home-2 p {
+    font-size: 16px;
 }
 
  .section-portfolio .text h1 {
@@ -1159,8 +1176,36 @@ nav{
 }
 
 @media screen and (min-width: 375px) and (max-width: 667px) {
+    body {
+        font-size: 18px;
+    }
     .section-home-1 {
         margin-top: 90px;
+    }
+
+    body {
+        line-height: unset;
+    }
+
+    .btn {
+        padding: 7px;
+        font-size: 11px;
+     }
+
+     .text h1 {
+        font-size: 14px;
+    }
+
+    .section-home-2 p {
+        margin-top: 3rem;
+    }
+
+    .section-home-3 h1 {
+        font-size: 14px;
+    }
+
+    .section-home-3 p {
+        font-size: 12px;
     }
 }
 
