@@ -14,7 +14,7 @@
     --ff-primary: 'Playfair Display', serif;
     --ff-secondary: futura-pt;
 
-    --clr-light: #fff;
+    --clr-light: rgb(255, 255, 255);
     --clr-dark: #000;
     --clr-accent: rgb(105, 105, 105);
 }
@@ -184,9 +184,8 @@ nav{
 }
 
 .btn {
-
     float: right;
-    background: none;
+    background: rgb(105, 105, 105, .4);
     border: 2px solid var(--clr-light);
     padding: 10px;
     font-size: 16px;
