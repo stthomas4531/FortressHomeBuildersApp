@@ -46,6 +46,20 @@ section {
     padding: 5em 2em;
 }
 
+.back-btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.back-btn i {
+    color: var(--clr-light);
+    font-size: 22px;
+}
+
+.back-btn i:hover {
+    color: var(--clr-accent);
+}
+
 /* Nav */
 nav{
     display: flex;
