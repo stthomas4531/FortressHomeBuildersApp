@@ -875,15 +875,27 @@ textarea::placeholder{
 
 /* SERVICES SECTION */
 
+.section-services {
+    height: 100vh;
+    background: url(./assets/images/services.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-services .text {
+    padding-top: 2rem;
+    margin-top: 15rem;
+    float: left;
+    text-shadow: 2px 2px var(--clr-dark);
+}
+
 .services-section{
-   background: url();
-   background-size: cover;
    padding: 60px 0;
    background-color: black;
 }
 
 /*.inner-width{
-   width: 100%; 
+   width: 100%;
    max-width: 1200px;
    margin: auto;
    padding: 0 20px;
