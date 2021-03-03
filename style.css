@@ -746,11 +746,11 @@ nav{
     color: var(--clr-light);
 }
 
-.contact-email-link {
+.contact-link {
     color: var(--clr-light);
 }
 
-.contact-email-link:hover {
+.contact-link:hover {
     color: var(--clr-accent);
 }
 
