@@ -806,13 +806,6 @@ nav{
     text-shadow: none;
 }
 
-.spam-blocker {
-    margin-bottom: 1rem;
-    width: 65%;
-    padding-left: 10px;
-    margin-left: 10px;
-}
-
 .contact-btn:hover {
     background: var(--clr-light);
     color: var(--clr-accent);
