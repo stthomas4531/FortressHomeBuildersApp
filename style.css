@@ -809,6 +809,8 @@ nav{
 .spam-blocker {
     margin-bottom: 1rem;
     width: 65%;
+    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .contact-btn:hover {
