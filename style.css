@@ -523,13 +523,13 @@ nav{
     background: var(--clr-dark);
     color: var(--clr-light);
     padding-top: 5rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .carousel {
     position: relative;
     height: 550px;
-    width: 70%;
+    width: 40%; /* What to adjust if two images are showing up on the slider */
     margin: 0 auto;
 }
 
@@ -615,7 +615,7 @@ nav{
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .carousel {
-        width: 63%;
+        width: 61%;
     }
 
     .carousel__track-container {
@@ -626,7 +626,7 @@ nav{
 
 @media screen and (min-width:280px) and (max-width: 767px) {
     .carousel {
-        width: 90%;
+        width: 85%;
     }
 
     .carousel__image {
@@ -1176,7 +1176,7 @@ body {
 }
 
 .section-home-4 p {
-    font-size: 12px;  
+    font-size: 12px;
 }
 }
 
@@ -1265,7 +1265,7 @@ body {
     .section-home-3 .text p {
         font-size: 11px;
     }
-    
+
  }
 
  @media screen and (min-width: 1024px) and (max-width: 1279px) {
