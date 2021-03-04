@@ -86,11 +86,11 @@ nav{
     filter: invert(100%) grayscale(100%); /* filter changes the color of the logo */
 }
 
-.nav-links{
+/* .nav-links{
     display: flex;
     justify-content: space-evenly;
     width: 30%;
-}
+} */
 
 .nav-links li{
     list-style: none;
@@ -1286,11 +1286,11 @@ body {
 
 
 @media screen and (max-width: 767px){
-    .nav-links{
+    /* .nav-links{
         display: flex;
         justify-content: space-around;
         width: 60%;
-    }
+    } */
 }
 
 @media screen and (max-width: 880px) {
@@ -1345,6 +1345,10 @@ body {
     }
     .burger{
         display: block;
+    }
+
+    .nav-links a{
+        margin-top: 3rem;
     }
 }
 
