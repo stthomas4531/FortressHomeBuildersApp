@@ -86,12 +86,6 @@ nav{
     filter: invert(100%) grayscale(100%); /* filter changes the color of the logo */
 }
 
-/* .nav-links{
-    display: flex;
-    justify-content: space-evenly;
-    width: 30%;
-} */
-
 .nav-links li{
     list-style: none;
 }
@@ -515,144 +509,111 @@ nav{
         width: 40%;
     }
 }
-
 /* End Responsive Image Gallery */
 
-/* Image Carousel */
-#carousel {
+
+/* Slideshow */
+#slideshow {
     background: var(--clr-dark);
-    color: var(--clr-light);
-    padding-top: 5rem;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
 }
-
-.carousel {
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
     position: relative;
-    height: 550px;
-    width: 40%; /* What to adjust if two images are showing up on the slider */
-    margin: 0 auto;
-}
+    margin: auto;
+    background: var(--clr-dark);
+  }
 
-.carousel__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
 
-}
-
-.carousel__track-container {
-    background-color: var(--clr-dark);
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel__track {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition-duration: .5ms;
-}
-
-.carousel__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.carousel__button {
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
 
-.carousel__button i {
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
     color: var(--clr-light);
-}
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
 
-.carousel__button--left {
-    left: -40px;
-}
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: var(--clr-light);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
 
-.carousel__button--right {
-    right: -40px;
-}
-
-.fa-angle-left,
-.fa-angle-right {
-    font-size: 29px;
-}
-
-.carousel__nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.carousel__indicator {
-    background: var(--clr-light);
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin: 0 3px;
+  /* The dots/bullets/indicators */
+  .dot {
     cursor: pointer;
-}
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
 
-.carousel__indicator.current-slide {
-    background: var(--clr-accent);
-}
+  .active, .dot:hover {
+    background-color: #717171;
+  }
 
-.is-hidden { display: none; }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
 
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* End Slideshow */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .carousel {
-        width: 61%;
-    }
-
-    .carousel__track-container {
-        margin-top: 8rem;
-    }
-
-}
 
 @media screen and (min-width:280px) and (max-width: 767px) {
-    .carousel {
-        width: 85%;
-    }
-
-    .carousel__image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
-
-    .carousel__track-container {
-        margin-top: 4rem;
-        height: 50%;
-    }
-
-    .carousel__button--left {
-        top: 135px;
-    }
-
-    .carousel__button--right {
-        top: 135px;
-    }
-
-    .carousel__indicator {
-        display: none;
-    }
-
     .box{
         padding: 1px 5px;
     }
@@ -835,10 +796,6 @@ nav{
         text-align: center;
     }
 
-    /* body {
-        font-size: 14px;
-    } */
-
     .contact-content {
         margin-bottom: 1rem;
     }
@@ -885,6 +842,11 @@ nav{
 }
 
 @media screen and (max-width: 1024px){
+    /* .dot is the circles/dots under the image slide show */
+    .dot {
+        display: none;
+    }
+
     .contact-icons {
         width: 100%;
         padding-left: 0;
@@ -1283,15 +1245,6 @@ body {
         font-size: 35px;
     }
  }
-
-
-@media screen and (max-width: 767px){
-    /* .nav-links{
-        display: flex;
-        justify-content: space-around;
-        width: 60%;
-    } */
-}
 
 @media screen and (max-width: 880px) {
     .footer .footer-left,
