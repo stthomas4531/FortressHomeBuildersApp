@@ -558,7 +558,7 @@ nav{
   }
 
   /* Caption text */
-  .text {
+  .caption-text {
     color: var(--clr-light);
     font-size: 15px;
     padding: 8px 12px;
