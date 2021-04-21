@@ -1166,6 +1166,22 @@ body {
         font-size: 11px;
     }
 
+    .section-portfolio .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-about .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-services .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-contact .text h1 {
+        font-size: 1.5rem;
+    }
+
     .section-home-2 p {
         margin-top: 3rem;
     }
