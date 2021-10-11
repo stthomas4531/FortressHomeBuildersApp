@@ -665,6 +665,10 @@ nav{
     padding-bottom: 10%;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .contact-content {
     padding-top: 7rem;
 }
