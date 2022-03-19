@@ -938,7 +938,7 @@ nav{
 }
 
 .service-box{
-    max-width: 33.33%;
+    max-width: 35%;
     padding: 10px;
     text-align: center;
     color: #ddd;
@@ -961,6 +961,15 @@ nav{
     line-height: 65px;
     transform: rotate(-45deg);
     font-size: 26px;
+}
+
+.service-icon-img {
+    height: 35px;
+    width: 35px;
+    transform: rotate(-45deg);
+    filter: invert(100%) grayscale(100%); /* filter changes the color of the logo */
+    margin-bottom: 30px;
+    margin-top: 16px;
 }
 
 .service-box:hover .service-icon{
