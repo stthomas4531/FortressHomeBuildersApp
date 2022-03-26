@@ -23,155 +23,138 @@
 
     <!-- Slideshow container -->
     <section id="slideshow">
-        <div class="slideshow-container">
+      <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (64 of 147).jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 19</div>
-                    <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (64 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Text</div> -->
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (61 of 147).jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (60 of 147).jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (69 of 147).jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (41 of 147).jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (44 of 147).jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (67 of 147).jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (45 of 147).jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (46 of 147).jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (47 of 147).jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (48 of 147).jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (49 of 147).jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (51 of 147).jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (53 of 147).jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (55 of 147).jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (56 of 147).jpg" onclick="openModal();currentSlide(16)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (57 of 147).jpg" onclick="openModal();currentSlide(17)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (70 of 147).jpg" onclick="openModal();currentSlide(18)" class="hover-shadow">
+
+                  <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (71 of 147).jpg" onclick="openModal();currentSlide(19)" class="hover-shadow">
+            </div>            
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (64 of 147).jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (61 of 147).jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (60 of 147).jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (69 of 147).jpg" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (61 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Two</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (41 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">3 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (60 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (44 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">4 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (69 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (67 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">5 / 33</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (41 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (45 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">6 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (44 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (46 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">7 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (67 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (47 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">8 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (45 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (48 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">9 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (46 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (49 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">10 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (47 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (51 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">11 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (48 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (53 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">12 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (49 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (55 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">13 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (51 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (56 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">14 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (53 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (57 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">15 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (55 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (70 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">16 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (56 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
+            <div class="mySlides">
+              <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (71 of 147).jpg" style="width:100%">
+            </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">17 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (57 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">18 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (70 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">19 / 19</div>
-                <img src="../../assets/images/Portfolio_images/CousinRichHouse/Final (71 of 147).jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
-
-              <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+                <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
-            <span class="dot" onclick="currentSlide(11)"></span>
-            <span class="dot" onclick="currentSlide(12)"></span>
-            <span class="dot" onclick="currentSlide(13)"></span>
-            <span class="dot" onclick="currentSlide(14)"></span>
-            <span class="dot" onclick="currentSlide(15)"></span>
-            <span class="dot" onclick="currentSlide(16)"></span>
-            <span class="dot" onclick="currentSlide(17)"></span>
-            <span class="dot" onclick="currentSlide(18)"></span>
-            <span class="dot" onclick="currentSlide(19)"></span>
-        </div>
-
         <div class="back-btn">
             <a href="../portfolio.html"><i class="fas fa-undo-alt"></i></a>
         </div>
+
     </section>
 
   <!-- FOOTER -->
