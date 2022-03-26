@@ -214,7 +214,6 @@ nav{
 
 .section-home-3 h1 {
     color: var(--clr-light);
-    text-shadow: 2.5px 2.5px var(--clr-dark);
     text-transform: uppercase;
     font-family: var(--ff-primary);
 }
@@ -222,7 +221,6 @@ nav{
 .section-home-3 .text p {
     text-align: justify;
     color: var(--clr-light);
-    text-shadow: 2.5px 2.5px var(--clr-dark);
 }
 
 /* END HOME PAGE */
@@ -473,33 +471,19 @@ nav{
     transition: .3s ease-in-out;
 }
 
-/* Image Overlay */
-
-/* .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-
-    background-color: rgba(83, 82, 82, 0.5);
-  } */
-
-  .overlay-text {
-    color: white;
-    font-size: 20px;
-    text-shadow: 2.0px 2.0px var(--clr-dark);
-    position: absolute;
-    text-transform: uppercase;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.overlay-text {
+color: white;
+font-size: 20px;
+text-shadow: 2.0px 2.0px var(--clr-dark);
+position: absolute;
+text-transform: uppercase;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
 
 .single-img:hover {
     opacity: 1;
@@ -523,6 +507,11 @@ nav{
 /****************************************************************/
 
 /* Modal Lightbox */
+
+#slideshow {
+    background: var(--clr-dark);
+    margin-top: 4.5rem;
+}
 
 .row > .column {
     padding: 0 8px;
@@ -627,43 +616,6 @@ nav{
   }
   
   /****************************************************************/
-
-/* Slideshow */
-#slideshow {
-    background: var(--clr-dark);
-    margin-top: 4.5rem;
-}
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1500px;
-    position: relative;
-    margin: auto;
-    background: var(--clr-dark);
-  }
-
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-/* End Slideshow */
 
 
 @media screen and (min-width:280px) and (max-width: 767px) {
