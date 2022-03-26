@@ -549,6 +549,12 @@ nav{
       width: 45%;
       margin: 1rem;
   }
+
+  @media screen and (max-width: 812px) {
+    .column img {
+        width: 75%;
+    }
+}
   
   /* The Modal (background) */
   .modal {
