@@ -468,7 +468,7 @@ nav{
 .single-img {
     margin: 1rem;
     position: relative;
-    width: 35%;
+    width: 45%;
 }
 
 /* Image Overlay */
@@ -499,7 +499,7 @@ nav{
   }
 
 .single-img:hover .overlay {
-    opacity: 1;
+    opacity: 3;
 }
 
 /* End Image Overlay */
@@ -507,6 +507,12 @@ nav{
 @media screen and (max-width: 1024px) {
     .single-img {
         width: 40%;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .single-img {
+        width: 75%;
     }
 }
 /* End Responsive Image Gallery */
@@ -519,7 +525,7 @@ nav{
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 1500px;
     position: relative;
     margin: auto;
     background: var(--clr-dark);
