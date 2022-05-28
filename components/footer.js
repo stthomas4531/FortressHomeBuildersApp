@@ -19,7 +19,7 @@ class Footer extends HTMLElement {
         </div>
         <div class="footer-center">
             <div class="footer-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/Fortress-Home-Builders-2271096979879466/"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/fortresshomebuilders/"><i class="fab fa-instagram"></i></a>
             </div>
             <br />
